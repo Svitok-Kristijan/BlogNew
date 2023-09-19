@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from "react";
+import "./App.scss";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Nav from "./navbar/nav";
+import News from "./news/news";
+import Blog from "./blog/blog";
+import NewsDetails from "./news-details/newsDetails";
 
 function App() {
+  const initialAppState = JSON.parse(localStorage.getItem("appState")) || {
+    comments: [],
+  };
+
+  const [appState, setAppState] = useState(initialAppState);
+
+  useEffect(() => {
+    localStorage.setItem("appState", JSON.stringify(appState));
+  }, [appState]);
+
+  const handleCommentSubmit = (newComment) => {
+    setAppState((prevState) => ({
+      ...prevState,
+      comments: [...prevState.comments, newComment],
+    }));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Router>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<News />} />
+          <Route
+            path="/news-details/:index"
+            element={
+              <>
+                <NewsDetails />
+                <Blog
+                  onCommentSubmit={handleCommentSubmit}
+                  comments={appState.comments}
+                />
+              </>
+            }
+          />
+        </Routes>
+      </Router>
     </div>
   );
 }
