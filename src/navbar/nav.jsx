@@ -15,7 +15,7 @@ const Nav = () => {
     navigate("/");
   };
   const havigateabout = () => {
-    navigate("/about");
+    navigate("/movies");
   };
   const havigatecontact = () => {
     navigate("/contact");
@@ -28,10 +28,10 @@ const Nav = () => {
         <nav>
           <ul>
             <li onClick={havigatehome}>
-              <Link to="/">Home</Link>
+              <Link to="/">News</Link>
             </li>
             <li onClick={havigateabout}>
-              <Link to="/about">About</Link>
+              <Link to="/movies">Movies</Link>
             </li>
             <li onClick={havigatecontact}>
               <Link to="/contact">Contact</Link>

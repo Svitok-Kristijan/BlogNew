@@ -2,8 +2,9 @@ import React, {useState} from "react";
 import {useLocation} from "react-router-dom";
 import "./blog.scss";
 import CommentList from "./comment-list/commentList";
+import {v4 as uuidv4} from "uuid";
 
-const Blog = ({onCommentSubmit, comments}) => {
+const Blog = ({onCommentSubmit, comments, onDeleteComment}) => {
   const location = useLocation();
   const [name, setName] = useState("");
   const [comment, setComment] = useState("");
@@ -14,6 +15,7 @@ const Blog = ({onCommentSubmit, comments}) => {
       const index = location.pathname.split("/")[2];
 
       const newComment = {
+        id: uuidv4(),
         name: name,
         comment: comment,
         index: index,
@@ -65,6 +67,7 @@ const Blog = ({onCommentSubmit, comments}) => {
       <CommentList
         comments={comments}
         currentIndex={location.pathname.split("/")[2]}
+        onDeleteComment={onDeleteComment}
       />
     </div>
   );

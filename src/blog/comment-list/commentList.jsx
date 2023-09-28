@@ -1,18 +1,14 @@
-// CommentList.jsx
 import React from "react";
 import "./commentList.scss";
 
-const CommentList = ({comments = [], currentIndex}) => {
-  // Check if comments is defined and is an array before filtering
+const CommentList = ({comments = [], currentIndex, onDeleteComment}) => {
   if (!Array.isArray(comments)) {
-    return null; // Return nothing if comments is not an array
+    return null;
   }
 
-  // Filter comments to display only those matching the current index
   const filteredComments = comments.filter(
     (comment) => comment.index === currentIndex
   );
-  console.log(filteredComments);
 
   return (
     <div>
@@ -21,6 +17,7 @@ const CommentList = ({comments = [], currentIndex}) => {
         {filteredComments.map((comment, index) => (
           <li key={index} className="comment-list">
             <strong>{comment.name}*</strong> <p>{comment.comment}</p>
+            <span onClick={() => onDeleteComment(comment.id)}>X</span>
           </li>
         ))}
       </ul>

@@ -5,6 +5,7 @@ import Nav from "./navbar/nav";
 import News from "./news/news";
 import Blog from "./blog/blog";
 import NewsDetails from "./news-details/newsDetails";
+import Movies from "./movies/movies";
 
 function App() {
   const initialAppState = JSON.parse(localStorage.getItem("appState")) || {
@@ -24,6 +25,15 @@ function App() {
     }));
   };
 
+  const handleDeleteComment = (commentId) => {
+    setAppState((prevState) => ({
+      ...prevState,
+      comments: prevState.comments.filter(
+        (comment) => comment.id !== commentId
+      ),
+    }));
+  };
+
   return (
     <div className="app-container">
       <Router>
@@ -35,13 +45,16 @@ function App() {
             element={
               <>
                 <NewsDetails />
+
                 <Blog
                   onCommentSubmit={handleCommentSubmit}
                   comments={appState.comments}
+                  onDeleteComment={handleDeleteComment}
                 />
               </>
             }
           />
+          <Route path="/movies" element={<Movies />} />
         </Routes>
       </Router>
     </div>

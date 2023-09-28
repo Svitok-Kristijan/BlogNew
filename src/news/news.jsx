@@ -8,6 +8,7 @@ import newsData from "../news.json";
 const News = ({setSelectedNews}) => {
   const handleNewsClick = (news) => {
     setSelectedNews(news);
+    localStorage.setItem("selectedNewsId", news.id);
   };
 
   return (
