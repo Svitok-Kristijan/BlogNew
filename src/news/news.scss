@@ -2,8 +2,26 @@
   display: flex;
   height: 100%;
   width: 100%;
+  padding-top: 80px;
   justify-content: center;
-  margin-top: 250px;
+  margin-top: 150px;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.026),
+      rgba(255, 0, 0, 0.131) 70.71%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(0, 255, 0, 0.071),
+      rgba(0, 255, 0, 0.099) 70.71%
+    ),
+    linear-gradient(
+      336deg,
+      rgba(0, 0, 255, 0.107),
+      rgba(0, 0, 255, 0.044) 70.71%
+    );
+  border-radius: 100% 0% 53% 47% / 52% 0% 100% 48%;
+
   .news-glavni {
     display: flex;
     flex-direction: column;
@@ -21,8 +39,11 @@
     &:hover {
       cursor: pointer;
       opacity: 1;
-      transform: scale(1.02);
-      transition: all 0.4s;
+      transform: scale(1.04);
+      transition: all 0.2s;
+      > .news-link > p {
+        font-weight: 500;
+      }
     }
     .news-link {
       display: grid;
@@ -42,7 +63,7 @@
     }
 
     img {
-      width: 300px;
+      width: 320px;
       height: 300px;
     }
     h2 {
@@ -54,7 +75,7 @@
       height: 105px;
       overflow: hidden;
       margin-left: 30px;
-      color: gray;
+      color: rgb(34, 34, 34);
     }
   }
 }
