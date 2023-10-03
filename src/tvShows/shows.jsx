@@ -17,6 +17,18 @@ const Shows = () => {
     }
   };
 
+  const goToNext = () => {
+    if (currentIndex < showsData.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const goToPrevious = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
   return (
     <div className="shows-container" onWheel={handleScroll}>
       <div className="shows-glavni">
@@ -37,7 +49,13 @@ const Shows = () => {
           </div>
         ))}
       </div>
-      <span>&#60; Scroll &#62;</span>
+      <button className="prev" onClick={goToNext}>
+        &#62;
+      </button>
+      <span> Scroll </span>
+      <button className="next" onClick={goToPrevious}>
+        &#60;
+      </button>
     </div>
   );
 };

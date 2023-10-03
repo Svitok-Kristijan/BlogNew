@@ -104,11 +104,52 @@
       }
     }
   }
+  .next {
+    position: absolute;
+    padding: 10px;
+    bottom: 3px;
+    font-size: 70px;
+    border-radius: 100% 0% 100% 0% / 76% 51% 49% 24%;
+    transition: all 0.5s;
+    left: 40%;
+    background-color: transparent;
+    border: none;
+    opacity: 0.7;
+    transform: rotate(-20deg);
+    &:hover {
+      background-color: rgba(48, 27, 55, 0.684);
+      cursor: pointer;
+      opacity: 1;
+      color: white;
+      transform: rotate(0deg);
+    }
+  }
+  .prev {
+    position: absolute;
+    bottom: 50px;
+    left: 56%;
+    padding: 10px;
+    bottom: 3px;
+    font-size: 70px;
+    border-radius: 0% 100% 0% 100% / 46% 78% 22% 54%;
+    transition: all 0.5s;
+    background-color: transparent;
+    border: none;
+    opacity: 0.7;
+    transform: rotate(20deg);
+    &:hover {
+      background-color: rgba(48, 27, 55, 0.684);
+      cursor: pointer;
+      opacity: 1;
+      color: white;
+      transform: rotate(0deg);
+    }
+  }
   span {
-    color: rgb(38, 38, 47);
+    color: rgb(42, 42, 49);
     position: absolute;
     font-size: 50px;
-    bottom: -20px;
+    bottom: -15px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
