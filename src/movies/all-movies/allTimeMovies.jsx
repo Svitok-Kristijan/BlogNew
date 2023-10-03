@@ -4,12 +4,14 @@ import allMoviesData from "../../allTimeMovies.json";
 import {useDispatch} from "react-redux";
 import {setSelectedMovie} from "../../store/movieAction";
 import {toggleMovieVisibility} from "../../store/visibilityAction";
+import {resetNavbarVisibility} from "../../store/navBarAction";
 
 const AllTimeMovies = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const dispatch = useDispatch();
   const handleToggleVisibility = () => {
     dispatch(toggleMovieVisibility());
+    dispatch(resetNavbarVisibility());
   };
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>

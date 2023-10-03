@@ -2,29 +2,36 @@ import React, {useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
 import "./nav.scss";
 import menuSvg from "./menu.svg";
+import {useDispatch, useSelector} from "react-redux";
+import {toggleNavbarVisibility} from "../store/navBarAction";
 
 const Nav = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const isVisble = useSelector((state) => state.navbarVisibility.isVisible);
+
   const navigate = useNavigate();
-  // Define a function to toggle the visibility
-  const toggleVisibility = () => {
-    setIsVisible(!isVisible);
+
+  const dispatch = useDispatch();
+  const visibilityHandler = () => {
+    dispatch(toggleNavbarVisibility());
   };
 
   const havigatehome = () => {
     navigate("/");
+    visibilityHandler();
   };
   const havigateabout = () => {
     navigate("/movies");
+    visibilityHandler();
   };
   const havigatecontact = () => {
-    navigate("/contact");
+    navigate("/shows");
+    visibilityHandler();
   };
 
   return (
     <div className="nav-bar">
-      <img src={menuSvg} alt="menu" onClick={toggleVisibility} />
-      {isVisible && (
+      <img src={menuSvg} alt="menu" onClick={visibilityHandler} />
+      {isVisble && (
         <nav>
           <ul>
             <li onClick={havigatehome}>
@@ -34,7 +41,7 @@ const Nav = () => {
               <Link to="/movies">Movies</Link>
             </li>
             <li onClick={havigatecontact}>
-              <Link to="/contact">Contact</Link>
+              <Link to="/shows">TV Shows</Link>
             </li>
           </ul>
         </nav>

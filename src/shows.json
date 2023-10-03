@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "title": "Breaking Bad",
+    "description": "A high school chemistry teacher turned methamphetamine kingpin navigates the dangerous criminal underworld.",
+    "duration": "60 minutes",
+    "genre": "Crime, Drama, Thriller",
+    "year": 2008,
+    "pic": "https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Game of Thrones",
+    "description": "A tale of power, betrayal, and epic battles in the Seven Kingdoms of Westeros.",
+    "duration": "55 minutes",
+    "genre": "Action, Adventure, Drama",
+    "year": 2011,
+    "pic": "https://s-cdn-sj.eu-central-1.linodeobjects.com/n/game-of-thrones-og.jpg"
+  },
+
+  {
+    "id": 9,
+    "title": "The Mandalorian",
+    "description": "A lone bounty hunter navigates the outer reaches of the galaxy in the Star Wars universe.",
+    "duration": "40 minutes",
+    "genre": "Action, Adventure, Fantasy",
+    "year": 2019,
+    "pic": "https://m.media-amazon.com/images/I/91+5a2Dr+5L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 10,
+    "title": "The Witcher",
+    "description": "Geralt of Rivia, a monster hunter, seeks his destiny in a world filled with magic, monsters, and political intrigue.",
+    "duration": "60 minutes",
+    "genre": "Action, Adventure, Drama",
+    "year": 2019,
+    "pic": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/qezXTVn1ExqBjVjR5Ipm97IK.png"
+  },
+  {
+    "id": 11,
+    "title": "Westworld",
+    "description": "An amusement park populated by lifelike robots allows guests to live out their wildest fantasies, but things take a dark turn.",
+    "duration": "60 minutes",
+    "genre": "Drama, Mystery, Sci-Fi",
+    "year": 2016,
+    "pic": "https://m.media-amazon.com/images/M/MV5BZDg1OWRiMTktZDdiNy00NTZlLTg2Y2EtNWRiMTcxMGE5YTUxXkEyXkFqcGdeQXVyMTM2MDY0OTYx._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": 12,
+    "title": "The Big Bang Theory",
+    "description": "Follow the lives of socially awkward physicists and their interactions with friends and romantic partners.",
+    "duration": "22 minutes",
+    "genre": "Comedy",
+    "year": 2007,
+    "pic": "https://flxt.tmsimg.com/assets/p185554_b_v8_bk.jpg"
+  },
+  {
+    "id": 13,
+    "title": "The Walking Dead",
+    "description": "Survivors of a zombie apocalypse must band together to stay alive and rebuild society.",
+    "duration": "44 minutes",
+    "genre": "Drama, Horror, Thriller",
+    "year": 2010,
+    "pic": "https://m.media-amazon.com/images/M/MV5BZmU5NTcwNjktODIwMi00ZmZkLTk4ZWUtYzVjZWQ5ZTZjN2RlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+  },
+
+  {
+    "id": 15,
+    "title": "Friends",
+    "description": "Follow the lives of six friends living in New York City as they navigate love, work, and friendship.",
+    "duration": "22 minutes",
+    "genre": "Comedy, Romance",
+    "year": 1994,
+    "pic": "https://flxt.tmsimg.com/assets/p183931_b_v9_ac.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Stranger Things",
+    "description": "In a small town, a group of kids uncover supernatural mysteries and government conspiracies.",
+    "duration": "50 minutes",
+    "genre": "Drama, Fantasy, Horror",
+    "year": 2016,
+    "pic": "https://upload.wikimedia.org/wikipedia/en/7/78/Stranger_Things_season_4.jpg"
+  },
+  {
+    "id": 17,
+    "title": "The Office",
+    "description": "A mockumentary-style sitcom that depicts the everyday lives of office employees at Dunder Mifflin.",
+    "duration": "22 minutes",
+    "genre": "Comedy",
+    "year": 2005,
+    "pic": "https://m.media-amazon.com/images/I/81NK3yCvMJL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "id": 18,
+    "title": "The Crown",
+    "description": "A historical drama series that traces the reign of Queen Elizabeth II and the events of the British monarchy.",
+    "duration": "60 minutes",
+    "genre": "Biography, Drama, History",
+    "year": 2016,
+    "pic": "https://resizing.flixster.com/mCM8RQGktWOcDT7KBn08dC1ICqo=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvUlRUVjIxOTg1OS53ZWJw"
+  },
+  {
+    "id": 19,
+    "title": "Sherlock",
+    "description": "Modern-day adaptation of Arthur Conan Doyle's classic detective stories featuring Sherlock Holmes and Dr. John Watson.",
+    "duration": "90 minutes",
+    "genre": "Crime, Drama, Mystery",
+    "year": 2010,
+    "pic": "https://www.daserste.de/unterhaltung/film/sherlock/videos/sherlock-168~_v-facebook1200_0218f0.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Black Mirror",
+    "description": "An anthology series exploring the dark and often dystopian side of technology and society.",
+    "duration": "60 minutes",
+    "genre": "Drama, Sci-Fi, Thriller",
+    "year": 2011,
+    "pic": "https://www.lucyda.de/wp-content/uploads/2018/05/black-mirror-poster.jpg"
+  },
+  {
+    "id": 25,
+    "title": "The Queen's Gambit",
+    "description": "A young orphaned chess prodigy rises to the top of the chess world while battling personal demons.",
+    "duration": "60 minutes",
+    "genre": "Drama",
+    "year": 2020,
+    "pic": "https://flxt.tmsimg.com/assets/p18769662_b_v13_aa.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Money Heist",
+    "description": "A group of robbers, led by 'The Professor,' plan and execute heists on the Royal Mint of Spain and the Bank of Spain.",
+    "duration": "50 minutes",
+    "genre": "Action, Crime, Drama",
+    "year": 2017,
+    "pic": "https://i0.wp.com/thsindex.org/wp-content/uploads/2023/04/Money-Heist-was-first-released-on-Antena-3-in-Spain-in-2017-Netflix.jpg?fit=1920%2C2560&ssl=1"
+  }
+]

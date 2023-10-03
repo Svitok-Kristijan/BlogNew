@@ -6,6 +6,7 @@ import News from "./news/news";
 import Blog from "./blog/blog";
 import NewsDetails from "./news-details/newsDetails";
 import Movies from "./movies/movies";
+import Shows from "./tvShows/shows";
 
 function App() {
   const initialAppState = JSON.parse(localStorage.getItem("appState")) || {
@@ -55,6 +56,8 @@ function App() {
             }
           />
           <Route path="/movies" element={<Movies />} />
+
+          <Route className="show-cl" path="/shows" element={<Shows />} />
         </Routes>
       </Router>
     </div>

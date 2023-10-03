@@ -4,6 +4,7 @@ import "./moviesDescription.scss";
 import {useDispatch} from "react-redux";
 import {toggleMovieVisibility} from "../../store/visibilityAction";
 
+
 const MoviesDescription = () => {
   const selectedMovie = useSelector((state) => state.movie.selectedMovie);
 
@@ -11,6 +12,7 @@ const MoviesDescription = () => {
   const handleToggleVisibility = () => {
     dispatch(toggleMovieVisibility());
   };
+ 
   return (
     <div>
       (
